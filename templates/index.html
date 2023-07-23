@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Data Input</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1>User Data Input</h1>
+    <form method="post" action="/">
+        <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br>
+</div>
+<div class="form-group">
+        <label for="season">Favorite Season:</label>
+        <select name="season" required>
+            <option value="Summer">Summer</option>
+            <option value="Winter">Winter</option>
+            <option value="Rainy">Rainy</option>
+        </select><br>
+        </div>
+
+<div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+</div>
+<div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" required><br>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <a href="/visualize">Visualize Data</a>
+    </div>
+</body>
+</html>

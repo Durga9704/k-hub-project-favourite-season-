@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Data Display</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>User Data</h1>
+    <div class="container">
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Favorite Season</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+        </tr>
+        {% for entry in data %}
+        <tr>
+            <td>{{ entry['name'] }}</td>
+            <td>{{ entry['season'] }}</td>
+            <td>{{ entry['email'] }}</td>
+            <td>{{ entry['phone'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/visualize">Visualize Data</a>
+    </div>
+</body>
+</html>
